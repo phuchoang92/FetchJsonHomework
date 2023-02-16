@@ -5,7 +5,7 @@ import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-public class ContactDetailActivity extends AppCompatActivity {
+public class InformDetailActivity extends AppCompatActivity {
 
     private String personName, contactPhone, contactEmail;
     private TextView nameView, phoneView, emailView;

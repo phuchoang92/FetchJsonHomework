@@ -17,7 +17,6 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.net.HttpURLConnection;
-import java.net.MalformedURLException;
 import java.net.URL;
 import java.util.ArrayList;
 import java.util.List;
@@ -44,7 +43,7 @@ public class MainActivity extends AppCompatActivity {
             ));
         }
 
-        ContactAdapter adapter = new ContactAdapter(this,list_of_person);
+        InformAdapter adapter = new InformAdapter(this,list_of_person);
         ListView listView = findViewById(R.id.list_items);
         listView.setAdapter(adapter);
         registerForContextMenu(listView);

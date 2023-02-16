@@ -10,12 +10,12 @@ import android.widget.TextView;
 
 import java.util.List;
 
-public class ContactAdapter extends BaseAdapter {
+public class InformAdapter extends BaseAdapter {
 
     private Context context;
     private List<PersonInfo> personInfoList;
 
-    public ContactAdapter(Context context, List<PersonInfo> personInfoList) {
+    public InformAdapter(Context context, List<PersonInfo> personInfoList) {
         this.context = context;
         this.personInfoList = personInfoList;
     }
@@ -57,7 +57,7 @@ public class ContactAdapter extends BaseAdapter {
         convertView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent i = new Intent(context, ContactDetailActivity.class);
+                Intent i = new Intent(context, InformDetailActivity.class);
                 i.putExtra("name",item.getName() );
                 i.putExtra("phone", item.getPhoneNumber());
                 i.putExtra("email", item.getEmail());
